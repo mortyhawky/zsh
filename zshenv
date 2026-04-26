@@ -3,7 +3,7 @@
 # Updated ArchReal 2026-04-25 10:33 Sat
 
 local SCRIPT_PATH="${(%):-%N}"
-export DEBUG="true"
+export DEBUG="FALSE"
 if [[ "$DEBUG" == "true" ]]; then 
   echo "\n--> Start: $SCRIPT_PATH  SL=$SHLVL --> Sourced for all shells"
 fi
@@ -21,6 +21,6 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 
 if [[ "$DEBUG" == "true" ]]; then 
-  yes | cp -ivf $SCRIPT_PATH $ZDOTDIR/_etc_zsh_zshenv_backup_
+  #yes | cp -ivf $SCRIPT_PATH $ZDOTDIR/_etc_zsh_zshenv_backup_
   echo "--> End..: $SCRIPT_PATH"
 fi

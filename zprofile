@@ -23,6 +23,6 @@ fi
 
 
 if [[ "$DEBUG" == "true" ]]; then 
-  yes | cp -ivf $SCRIPT_PATH $ZDOTDIR/_etc_zsh_zprofile_backup_
+  #yes | cp -ivf $SCRIPT_PATH $ZDOTDIR/_etc_zsh_zprofile_backup_
   echo "--> End..: $SCRIPT_PATH"
 fi
