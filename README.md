@@ -1,0 +1,1 @@
+### Global zsh config
