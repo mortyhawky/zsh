@@ -1,12 +1,9 @@
 #!/usr/bin/zsh/env zsh
 # /etc/zsh/zsenv
 # Updated ArchReal 2026-04-25 10:33 Sat
-#
-# To Edit this global file, owend by root, use sudo nvim
-# Or use the Ctrl+e mapping in vifm (:!sudo -E nvim "%f")
 
 local SCRIPT_PATH="${(%):-%N}"
-export DEBUG="FALSE"
+export DEBUG="true"
 if [[ "$DEBUG" == "true" ]]; then 
   echo "\n--> Start: $SCRIPT_PATH  SL=$SHLVL --> Sourced for all shells"
 fi
@@ -18,8 +15,8 @@ export XDG_STATE_HOME="$HOME/.local"
 export BROWSER="/usr/bin/firefox"
 export EDITOR="/usr/bin/nvim"
 export POWERSHELL_TELEMETRY_OPTOUT=1
-export XAUTHORITY="$XDG_CONFIG_HOME/xorg/.Xauthority"
-export XINITRC="$XDG_CONFIG_HOME/xorg/.xinitrc"
+export XAUTHORITY="$XDG_CONFIG_HOME/x11/.Xauthority"
+export XINITRC="$XDG_CONFIG_HOME/x11/.xinitrc"
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 
 
